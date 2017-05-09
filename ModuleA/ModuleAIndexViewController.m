@@ -6,13 +6,13 @@
 //  Copyright © 2017年 yangdd. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ModuleAIndexViewController.h"
 
-@interface ViewController ()
+@interface ModuleAIndexViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ModuleAIndexViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
