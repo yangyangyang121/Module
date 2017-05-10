@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ModuleA"
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.summary	     = "ModuleA"
   s.homepage         = "https://github.com/yangyangyang121/ModuleA.git"
   s.author           = { "daniel" => "yangyangyang121@163.com" }
