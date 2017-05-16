@@ -21,7 +21,11 @@
 
     }];
 
-    [MGJRouter openURL:@"mgj://moduleA"];
+    //[MGJRouter openURL:@"mgj://moduleA"];
+
+    [MGJRouter openURL:@"mgj://moduleA" completion:^(id result) {
+        NSLog(@"call back ......");
+    }];
 }
 
 @end
