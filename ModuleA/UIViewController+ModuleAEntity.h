@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void (^CallBackHandler) (id *result);
+
 @interface UIViewController (ModuleAEntity)
 
 -(void) openModuleAIndex;

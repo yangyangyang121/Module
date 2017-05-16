@@ -15,9 +15,14 @@
 -(void) openModuleAIndex {
 
     [MGJRouter registerURLPattern:@"mgj://moduleA" toHandler:^(NSDictionary *routerParameters) {
+
         NSLog(@"params is %@", routerParameters);
 
         [self.navigationController pushViewController:[[ModuleIndexViewController alloc] initWithNibName:@"ModuleAXibBundle.bundle/ModuleIndexViewController" bundle:nil] animated:YES];
+
+        CallBackHandler callback = routerParameters[MGJRouterParameterCompletion];
+        NSString *result = @"this is call back result";
+        
 
     }];
 
