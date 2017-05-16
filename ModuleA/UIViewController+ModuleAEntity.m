@@ -10,16 +10,16 @@
 #import <MGJRouter/MGJRouter.h>
 #import "ModuleIndexViewController.h"
 
-
 @implementation UIViewController (ModuleAEntity)
 
 -(void) openModuleAIndex {
 
-    [MGJRouter registerURLPattern:@"mgj://moduleB" toHandler:^(NSDictionary *routerParameters) {
+    [MGJRouter registerURLPattern:@"mgj://moduleA" toHandler:^(NSDictionary *routerParameters) {
         NSLog(@"params is %@", routerParameters);
 
         [self.navigationController pushViewController:[[ModuleIndexViewController alloc] initWithNibName:@"ModuleAXibBundle.bundle/ModuleIndexViewController" bundle:nil] animated:YES];
-        }];
+
+    }];
 
     [MGJRouter openURL:@"mgj://moduleA"];
 }
