@@ -7,6 +7,7 @@
 //
 
 #import "ModuleIndexViewController.h"
+#import "UIViewController+ModuleAEntity.h"
 
 @interface ModuleIndexViewController ()
 
@@ -24,6 +25,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction) pressButton:(id)sender {
+
+    void (^completion)(id result) = self.routerCallBackResult[@"MGJRouterParameterCompletion"];
+    if (completion) {
+        completion(nil);
+    }
+    
+}
 /*
 #pragma mark - Navigation
 

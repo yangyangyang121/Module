@@ -10,4 +10,6 @@
 
 @interface ModuleIndexViewController : UIViewController
 
+- (IBAction) pressButton:(id)sender;
+
 @end

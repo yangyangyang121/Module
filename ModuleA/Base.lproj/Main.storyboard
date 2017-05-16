@@ -28,7 +28,7 @@
                                     <constraint firstAttribute="width" constant="150" id="ItF-eq-Mxw"/>
                                     <constraint firstAttribute="height" constant="50" id="OGa-cu-7oe"/>
                                 </constraints>
-                                <state key="normal" title="This is Module A">
+                                <state key="normal" title="This is Module GG">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>

@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void (^CallBackHandler) (id *result);
-
 @interface UIViewController (ModuleAEntity)
 
--(void) openModuleAIndex;
+@property (nonatomic, strong) NSMutableDictionary *routerCallBackResult;
+
+- (void) openModuleAIndex;
+
+- (NSMutableDictionary *) getRouterCallBackResult;
 
 @end

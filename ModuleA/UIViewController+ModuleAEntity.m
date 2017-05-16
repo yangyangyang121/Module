@@ -18,11 +18,11 @@
 
         NSLog(@"params is %@", routerParameters);
 
-        [self.navigationController pushViewController:[[ModuleIndexViewController alloc] initWithNibName:@"ModuleAXibBundle.bundle/ModuleIndexViewController" bundle:nil] animated:YES];
+        UIViewController *vc = [[ModuleIndexViewController alloc] initWithNibName:@"ModuleAXibBundle.bundle/ModuleIndexViewController" bundle:nil];
 
-        CallBackHandler callback = routerParameters[MGJRouterParameterCompletion];
-        NSString *result = @"this is call back result";
-        
+        self.routerCallBackResult = routerParameters;
+
+        [self.navigationController pushViewController:vc animated:YES];
 
     }];
 
@@ -31,6 +31,10 @@
     [MGJRouter openURL:@"mgj://moduleA" completion:^(id result) {
         NSLog(@"call back ......");
     }];
+}
+
+- (NSMutableDictionary *) getRouterCallBackResult {
+    return self.routerCallBackResult;
 }
 
 @end
