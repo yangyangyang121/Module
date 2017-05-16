@@ -15,7 +15,7 @@
 
 -(void) openModuleAIndex {
 
-    [MGJRouter registerURLPattern:@"mgj://moduleB/detail/:id" toHandler:^(NSDictionary *routerParameters) {
+    [MGJRouter registerURLPattern:@"mgj://moduleB" toHandler:^(NSDictionary *routerParameters) {
         NSLog(@"params is %@", routerParameters);
 
         [self.navigationController pushViewController:[[ModuleIndexViewController alloc] initWithNibName:@"ModuleAXibBundle.bundle/ModuleIndexViewController" bundle:nil] animated:YES];
