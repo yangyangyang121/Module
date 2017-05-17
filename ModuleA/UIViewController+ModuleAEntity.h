@@ -14,6 +14,5 @@
 
 - (void) openModuleAIndex;
 
-- (NSMutableDictionary *) getRouterCallBackResult;
 
 @end

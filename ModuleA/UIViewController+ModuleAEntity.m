@@ -20,21 +20,12 @@
 
         UIViewController *vc = [[ModuleIndexViewController alloc] initWithNibName:@"ModuleAXibBundle.bundle/ModuleIndexViewController" bundle:nil];
 
-        self.routerCallBackResult = routerParameters;
-
         [self.navigationController pushViewController:vc animated:YES];
-
     }];
-
-    //[MGJRouter openURL:@"mgj://moduleA"];
 
     [MGJRouter openURL:@"mgj://moduleA" completion:^(id result) {
         NSLog(@"call back ......");
     }];
-}
-
-- (NSMutableDictionary *) getRouterCallBackResult {
-    return self.routerCallBackResult;
 }
 
 @end
