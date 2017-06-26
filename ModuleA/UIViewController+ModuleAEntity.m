@@ -7,25 +7,25 @@
 //
 
 #import "UIViewController+ModuleAEntity.h"
-#import <MGJRouter/MGJRouter.h>
+//#import <MGJRouter/MGJRouter.h>
 #import "ModuleIndexViewController.h"
 
 @implementation UIViewController (ModuleAEntity)
 
 -(void) openModuleAIndex {
 
-    [MGJRouter registerURLPattern:@"mgj://moduleA" toHandler:^(NSDictionary *routerParameters) {
-
-        NSLog(@"params is %@", routerParameters);
-
-        UIViewController *vc = [[ModuleIndexViewController alloc] initWithNibName:@"ModuleAXibBundle.bundle/ModuleIndexViewController" bundle:nil];
-
-        [self.navigationController pushViewController:vc animated:YES];
-    }];
-
-    [MGJRouter openURL:@"mgj://moduleA" completion:^(id result) {
-        NSLog(@"call back ......");
-    }];
+//    [MGJRouter registerURLPattern:@"mgj://moduleA" toHandler:^(NSDictionary *routerParameters) {
+//
+//        NSLog(@"params is %@", routerParameters);
+//
+//        UIViewController *vc = [[ModuleIndexViewController alloc] initWithNibName:@"ModuleAXibBundle.bundle/ModuleIndexViewController" bundle:nil];
+//
+//        [self.navigationController pushViewController:vc animated:YES];
+//    }];
+//
+//    [MGJRouter openURL:@"mgj://moduleA" completion:^(id result) {
+//        NSLog(@"call back ......");
+//    }];
 }
 
 @end
