@@ -11,9 +11,10 @@
 
 @implementation Target_ModuleA
 
--(UIViewController *)action_GetModuleAIndexController:(NSDictionary *)param {
-    ModuleIndexViewController *vc=[[ModuleIndexViewController alloc]initWithNibName:@"ModuleIndexViewController" bundle:[NSBundle bundleForClass:[self class]]];
+- (UIViewController *)action_GetModuleAIndexController:(NSDictionary *)param {
 
+    ModuleIndexViewController *vc=[[ModuleIndexViewController alloc]initWithNibName:@"ModuleAXibBundle.bundle/ModuleIndexViewController" bundle:nil];
+    
     if ([param.allKeys containsObject:@"callBack"]) {
 //        vc.callBack=[param objectForKey:@"callBack"];
     }
